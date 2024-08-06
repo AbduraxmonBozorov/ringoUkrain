@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0px;
+}
+
+.header__container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__container .logo {
+    width: 122px;
+    height: 53px;
+}
+
+.nav-list {
+    /* border: 1px solid blue; */
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: #282B22;
+}
+
+.nav-item a:hover {
+    color: #AE7B3C;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.social div {
+    /* border: 1px solid black; */
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.social .facebook{
+    padding: 10px 15px;
+}
+
+
+
+.social img{
+    cursor: pointer;
+}
+
+.social *:hover{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+}
+
+
+
+.social div .insta_circle {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+   
+}
+
+.phone {
+    /* border: 1px solid blue; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.phone span {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #3D4A39;
+}
+
+/* header style end */
+
+.hero{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.hero .her__img{
+    width: 100%;
+    height: 687px;
+}
+
+
+.hero__bg{
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 85%), rgba(0, 0, 0, 20%));
+    height: 687px;
+    /* border: 1px solid blue; */
+    width: 100%;    
+}
+
+.hero__title{
+    /* border: 1px solid white; */
+    padding-top: 120px;
+}
+
+.hero__title h1{
+    margin: 0 auto;
+    width: 446px;
+    text-align: center;
+    color: white;
+    font-family: 'Lato';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero__title p{
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+    width: 537px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 50px
+}
+
+.hero__title button{
+    padding: 22px 56px;
+    background-color:#AE7B3C;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    border: none;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 5%);
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.hero__title button:hover{
+    background-color: #7f5726;
+}
+
+.slayder{
+    border-top: 1px solid rgba(255, 255, 255, 0.673);
+    margin-top: 120px;
+    margin-bottom: 45px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.arrow{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.arrow img{
+    cursor: pointer;
+}
+
+
+.arrow img:active{
+    background-color: rgb(180, 178, 178);
+}
+
+.indicator{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.indicator span{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.59);
+    border: 1px solid rgba(255, 255, 255, 0.59);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator .active{
+    color: white;
+    border-color: white;
+}
+
+.indicator span:hover{
+    color: white;
+    border-color: white;
+}
